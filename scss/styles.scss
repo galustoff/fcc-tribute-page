@@ -2,4 +2,6 @@
 @import './presets/fonts', './presets/variables', './presets/root';
 
 // importing page elements styles
-@import './elements/body', './elements/main', './elements/heading';
+@import './elements/body', './elements/main', './elements/heading',
+  './elements/img-block', './elements/info', './elements/list',
+  './elements/quote';

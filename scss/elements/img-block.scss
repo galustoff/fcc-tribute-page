@@ -1,0 +1,15 @@
+.img-block {
+  padding: 10px;
+  background-color: #fff;
+
+  &__image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  &__caption {
+    margin: 15px 0 5px 0;
+  }
+}
