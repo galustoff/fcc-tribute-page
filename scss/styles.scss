@@ -1,3 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+// importing presets
+@import './presets/fonts', './presets/variables', './presets/root';
 
-@import 'variables', 'body', 'main', 'heading';
+// importing page elements styles
+@import './elements/body', './elements/main', './elements/heading';
