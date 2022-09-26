@@ -1,0 +1,42 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galustoff/fcc-tribute-page.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "scss"
+  ],
+  "author": "Daniil Galustov <galustoff.dan@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galustoff/fcc-tribute-page/issues"
+  },
+  "homepage": "https://github.com/galustoff/fcc-tribute-page#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
