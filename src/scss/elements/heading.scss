@@ -1,7 +1,21 @@
 .heading {
   &__title {
+    margin-top: 0.3rem;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 268px) {
+  .heading {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .heading {
+    line-height: 1.5;
   }
 }

@@ -1,4 +1,5 @@
 .img-block {
+  margin: 0;
   padding: 10px;
   background-color: #fff;
 
@@ -11,5 +12,11 @@
 
   &__caption {
     margin: 15px 0 5px 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .img-block {
+    margin: 16px 40px;
   }
 }

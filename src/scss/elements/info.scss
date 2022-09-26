@@ -6,7 +6,7 @@
   }
 
   &__heading {
-    margin: 50px;
+    margin: 30px 10px;
   }
 
   &__caption {
@@ -20,5 +20,12 @@
 
   &__link:visited {
     color: #74638f;
+  }
+}
+
+@media (min-width: 460px) {
+  .info__heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
