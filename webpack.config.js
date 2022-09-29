@@ -26,14 +26,12 @@ module.exports = {
     ],
   },
   optimization: {
+    minimize: isProd,
     minimizer: [new CssMinimizerWebpackPlugin()],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
-      minify: {
-        collapseWhitespace: isProd,
-      },
     }),
     new MiniCssExtractPlugin(),
   ],
