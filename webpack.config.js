@@ -1,7 +1,6 @@
 const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 
@@ -16,6 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "docs"),
     filename: "[name].[contenthash].js",
+    clean: true,
   },
   module: {
     rules: [
@@ -35,7 +35,6 @@ module.exports = {
         collapseWhitespace: isProd,
       },
     }),
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
   ],
   devServer: {
