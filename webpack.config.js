@@ -33,6 +33,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
+      minify: {
+        collapseWhitespace: isProd,
+      }
     }),
     new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
