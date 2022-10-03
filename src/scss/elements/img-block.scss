@@ -1,22 +1,43 @@
 .img-block {
-  margin: 0;
-  padding: 10px;
+  margin: 0 -15px;
+  padding: 10px 0;
   background-color: #fff;
 
   &__image {
-    max-width: 100%;
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     height: auto;
   }
 
   &__caption {
-    margin: 15px 0 5px 0;
+    margin: 15px 10px 5px;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 401px) {
+  .img-block {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &__caption {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) {
   .img-block {
     margin: 16px 40px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .img-block__image {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }
