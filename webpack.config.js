@@ -37,7 +37,9 @@ module.exports = {
         collapseWhitespace: isProd,
       }
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css"
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {

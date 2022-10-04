@@ -24,8 +24,10 @@
 }
 
 @media (min-width: 460px) {
-  .info__heading {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  .info {
+    &__heading {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
 }
